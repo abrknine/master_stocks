@@ -1,0 +1,126 @@
+
+body {
+    overflow-x: hidden;
+  }
+  
+  .Hero-Section {
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .Hero-img {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    height: 100%;
+   
+  }
+  
+  .into-img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    float: right;
+    margin-left: 20px;
+  }
+  
+  .Hero-content {
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .fourm{
+    /* padding: 12px 23px; */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .fourm input {
+    padding: 4px 17px;
+  }
+  .fourm select{
+    padding: 4px 17px;
+
+  }
+  .Hero-Right{
+      background-color: rgb(220, 224, 227);
+      margin:  50px;
+      padding: 50px;
+    border-radius: 12px;
+    opacity: 40;
+  }
+
+  .Hero-Right h3{
+    text-align: center;
+    margin-bottom:4px ;
+  }
+  .Hero-Left{
+    width: 500px;
+  }
+  .Hero-Left h1{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .Hero-Left p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px; 
+  }
+  .Call-Back{
+    display: flex;
+    justify-content: space-between;
+  }
+  .Phone-no{
+     /* color: black; */
+   padding: 9px 22px;
+     display: flex;
+     justify-content: space-between;
+     gap:5px;
+   background-color: #fcbf1b;
+   border-radius: 6px;
+
+  }
+  .Call button{
+   /* background-color: rgb(95, 141, 184); */
+   background-color: #fcbf1b;
+   padding: 9px 22px;
+   border-radius: 6px;
+   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+   /* color: bl; */
+  }
+  
+  @media (max-width: 768px) {
+    .Hero-content {
+      flex-direction: column;
+      bottom: 200px;
+    }
+    .Hero-Left {
+      text-align: center;
+    }
+    
+  }
+  
+  @media (max-width: 480px) {
+    .Hero-img {
+      top: 100px;
+    }
+    .Hero-content {
+      bottom: 100px;
+    }
+    .Hero-Left {
+      padding: 0px 20px;
+    }
+    
+    
+  }

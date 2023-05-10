@@ -1,0 +1,7 @@
+ .Name{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    font-size: 24px;
+} 

@@ -1,0 +1,21 @@
+.move-left-to-right {
+    position: absolute;
+    top: 100px;
+    margin: 0px 50px;
+    animation: move-left-to-right 40s linear infinite;
+    color: red;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+  }
+   
+
+  @keyframes move-left-to-right {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

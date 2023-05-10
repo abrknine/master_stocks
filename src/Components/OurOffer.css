@@ -1,0 +1,31 @@
+.Offer{
+    display: flex;
+    justify-content: space-around;
+    padding:   150px 100px 100px;
+    background-color: #e1e9f2;
+}
+.Offer-left h1{
+         margin-bottom: 22px;
+         margin-left: 34px;
+}
+.Offer-left ul{
+    /* margin-top: 23px; */
+    font-size: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 23px;
+}
+.Offer-right img{
+    margin-top: 23px;
+    width: 300px;
+    height: 200px;
+}
+.form-button{
+    background-color: #fcbf1b;
+    padding: 9px 22px;
+    border-radius: 6px;
+    margin-top: 23px;
+    margin-left: 34px;
+
+}

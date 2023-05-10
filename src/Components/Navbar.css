@@ -1,0 +1,131 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index: 10;
+ background: rgba(0,0,0,0.85);
+ /* color: aliceblue; */
+
+}
+/* #dropdown-basic{
+    font-size: 1.2rem;
+    background: rgba(0,0,0,0.85);
+    color: white;
+
+} */
+.dropdown-link {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .dropdown-link:hover {
+    text-decoration: none;
+  }
+  .Dropmenu{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: rgba(0,0,0,0.85);
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: 2px  2px #888888;
+  }
+.logo-img{
+    width: 100px;
+    height: 100px;
+    /* box-sizing: border-box; */
+    margin: 0px 12px 0px 12px;
+
+}
+.header-bg{
+ background: rgba(0,0,0,0.85);
+ transition: 0.5s; 
+}
+.header-bg h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-menu{
+    display: flex;
+}
+
+.nav-menu li{
+    padding: 0 1rem;
+    
+}
+
+.nav-menu li a{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+.hamburger{
+    display: none;
+}
+
+@media screen and ( max-width:1040px){
+.nav-menu{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+      height: 100vh;
+      background: rgba(0,0,0,0.9);
+      position: absolute;
+      top: 0;
+      left: -100%;
+      z-index: -3;
+      transition: 0.3s;
+}
+
+
+.nav-menu.active{
+    left: 0;
+}
+.nav-menu li{
+    padding: 1rem 0;
+    
+  }
+  .nav-menu li a{
+    font-size: 2rem;
+
+  }
+   
+  .hamburger{
+    display: initial ;
+  }
+
+}
+
+
+@media screen and (max-width: 1040px) {
+    #dropdown-basic + .Dropmenu {
+      background: rgba(0, 0, 0, 0.9);
+      position: absolute;
+      top: 90px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 90px);
+      z-index: 999;
+      overflow-y: scroll;
+    }
+  
+    #dropdown-basic + .Dropmenu li {
+      padding: 1rem 0;
+    }
+  
+    #dropdown-basic + .Dropmenu li a {
+      font-size: 2rem;
+    }
+  }

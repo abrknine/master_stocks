@@ -1,0 +1,25 @@
+.Footer-class{
+    
+    display: flex;
+    justify-content: space-evenly;
+    padding: 23px;
+    background-color: black;
+    color: whitesmoke;
+}
+.Packages-clone ul{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+.Policies ul{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+.Contact-info ul{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}

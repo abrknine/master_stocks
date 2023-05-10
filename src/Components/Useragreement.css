@@ -1,0 +1,27 @@
+.leftsticky{
+    position: fixed;
+    top: 50%;
+    left: -80px;
+    height: 40px;
+    width: 200px;
+    border: #019BE1 solid 1px;
+    background: #019BE1;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    border: 1px solid #019BE1;
+    position: fixed;
+    z-index: 12;
+    border-radius: 0 0 10px 10px;
+    opacity: 1;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-size: 19px;
+    text-decoration: none !important;
+
+}

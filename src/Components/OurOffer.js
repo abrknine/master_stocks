@@ -7,18 +7,18 @@ const OurOffer = () => {
   return (
     <div className="Offer">
       <div className="Offer-left">
-        <h1 className="text-4xl font-bold " >Trade Like a Pro</h1>
+        <h1 className="text-4xl font-bold " >Master the art of profitable trading</h1>
         <ul>
           <li className="flex"> <AiOutlineArrowRight/>
-            Are you missing out on expert research services?</li>
+          Are you not getting the most out of your research?</li>
           <li className="flex"><AiOutlineArrowRight/>
-          Tired of getting false commitments?</li>
+          Are you sick of being let down?</li>
           <li className="flex"><AiOutlineArrowRight/>
-          Looking for some reliable and convenient source for trade in indian stock market?</li>
+          Do you want to be able to trade stocks quickly and easily?</li>
           <li className="flex"><AiOutlineArrowRight/>
-          Our alert is right choice for you.</li>
+          Our alert is the perfect solution for your needs.</li>
         </ul>
-        <button className="form-button">Leran more</button>
+        <button className="form-button">Learn more</button>
       </div>
       <div className="Offer-right">
         <img src={offer1} alt="image" />

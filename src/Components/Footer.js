@@ -31,11 +31,11 @@ const Footer = () => {
 
       <div className='Contact-info'>
       <ul>
-        <li>  <FaPhone color='yellow'/>
+        <li className='flex gap-2'>  <FaPhone color='yellow'/>
         +9294567865</li>
-        <li>  <FaMailBulk color='yellow'/>
+        <li className='flex gap-2'>  <FaMailBulk color='yellow'/>
         masterstocks@gmail.com</li>
-        <li>  <FaAddressBook color='yellow'/>
+        <li className='flex gap-2'>  <FaAddressBook color='yellow'/>
          37-70 Andheri Mumbai</li>
        
       </ul>

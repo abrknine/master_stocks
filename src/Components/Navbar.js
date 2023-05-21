@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link,  } from 'react-router-dom';
 import "./Navbar.css";
 import master from "../assets/master.png"
 import {FaBars, FaTimes } from "react-icons/fa"
-import NavDropdown from 'react-bootstrap/NavDropdown';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Dropdown } from 'react-bootstrap';
 
 // useNavigate always 
@@ -31,7 +31,7 @@ const Navbar = () => {
       </Link>
       <ul className={click?"nav-menu active":"nav-menu"}>
         <li>
-           <Link to="/" > Home</Link>
+           <Link to="/">Home</Link>
         </li>
         <li>
         <Dropdown>
@@ -39,20 +39,20 @@ const Navbar = () => {
         Packages
       </Dropdown.Toggle>
         <Dropdown.Menu className='Dropmenu bg-blue-500'>
-          <Dropdown.Item className='bg-blue-500'>
-            <Link to="/page1">Equity Cash</Link>
+          <Dropdown.Item >
+            <Link className='bg-blue-500 ' to="/page1">Equity Cash</Link>
           </Dropdown.Item>
           <Dropdown.Item>
-            <Link to="/page2">Equity Cash Premium</Link>
+            <Link className='bg-blue-500'  to="/page2">Equity Cash Premium</Link>
           </Dropdown.Item>
           <Dropdown.Item>
-            <Link to="/page3">Index Option (Silver Package) </Link>
+            <Link className='bg-blue-500'   to="/page3">Index Option (Silver Package) </Link>
           </Dropdown.Item>
           <Dropdown.Item>
-            <Link to="/page4">Index Option (Gold Package)</Link>
+            <Link className='bg-blue-500 px-20'   to="/page4">Index Option (Gold Package)</Link>
           </Dropdown.Item>
           <Dropdown.Item>
-            <Link to="/page5">Index Option (Combo Package)</Link>
+            <Link className='bg-blue-500'   to="/page5">Index Option (Combo Package)</Link>
           </Dropdown.Item>
         </Dropdown.Menu>
 

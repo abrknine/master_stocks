@@ -6,6 +6,7 @@ import Footer from '../Components/Footer'
 import OurOffer from '../Components/OurOffer'
 import Practicei from '../Components/Practicei'
 import Rules from '../Components/Rules'
+import Call from '../Components/Call'
 import Useragreement from '../Components/Useragreement'
 
 
@@ -17,8 +18,9 @@ const Home = () => {
       <Hero/>
       <Useragreement/>
       <OurOffer/>
-      <Practicei/>
-      <Rules/>
+      <Rules />
+      <Practicei />
+      <Call/>
       <Footer/>
       
     </div>

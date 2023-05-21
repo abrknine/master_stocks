@@ -12,10 +12,7 @@ const Bank = () => {
       UPI ID - sub@okaxis234
 
     </span>
-    <span>
-      Bankaccount-  <a href=""> 1234343424242</a>
-
-    </span>
+   
 
    </div>
   )

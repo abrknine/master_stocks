@@ -22,6 +22,7 @@ const Hero = () =>
     alert('Try again!')
 }
   }
+
   const navigate=useNavigate()
 
        const [name,setName]=useState('')
@@ -30,9 +31,7 @@ const Hero = () =>
        const [email,setEmail]=useState('')
        const [states,setStates]=useState('')
        const [packages,setPackages]=useState('')
-  // const prompt=()=>{
-  //   prompt("Please enter your name", "Harry Potter");
-  // }
+ 
   const setData=async(e)=>{
   e.preventDefault()
   try {
@@ -40,7 +39,6 @@ const Hero = () =>
       name:name,
       email:email,
       mobile: mobile,
-      
       states:states,
       packages:packages,
     });
@@ -60,10 +58,10 @@ const Hero = () =>
       </div>
       <div className='Hero-content'>
       <div className='Hero-Left'>
-       <h1>Technical Research Alerts for Intraday traders.</h1>
+       <h1>Intraday Technical Analysis Alerts
+</h1>
        <p>
-Want to Invest in Stock Markets but don’t know where to invest ?
-Don’t Worry, Leave your investment worries on Us.
+       We can help you create an investment plan that meets your individual needs and goals.
 
 </p>
       <div className='Call-Back'>

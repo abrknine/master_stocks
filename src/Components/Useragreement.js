@@ -88,7 +88,7 @@ const  UserAgreement=() =>{
                    Compliant <FaExclamationCircle size={30} /> 
                 </>
             ),
-            href:'/resume.pdf',
+            href:'',
             style:'rounded-br-md',
             // download:true,
         },

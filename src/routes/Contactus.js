@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import Contact from '../Components/Contact'
+import UserAgreement from '../Components/Useragreement'
 
 
 const Contactus = () => {
@@ -11,9 +12,12 @@ const Contactus = () => {
 
        <Navbar/>
       </div>
+      <div>
+        <UserAgreement/>
+      </div>
        <div>
 
-       <Contact  style={{margin:'230px'}} />
+       <Contact />
        </div>
        <div>
 

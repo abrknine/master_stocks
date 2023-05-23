@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import Bank from '../Components/Bank'
 import Footer from '../Components/Footer'
+import UserAgreement from '../Components/Useragreement'
 
 const Bankdetails = () => {
   const styles = {
@@ -14,7 +15,10 @@ const Bankdetails = () => {
        <Navbar/>
 
       </div>
-       <div style={{margin:'230px'}} >
+      <div>
+        <UserAgreement/>
+      </div>
+       <div className='mt-32 mb-20' >
        <Bank />
 
        </div>

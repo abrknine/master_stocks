@@ -20,7 +20,7 @@ const Home = () => {
       <OurOffer/>
       <Rules />
       <Practicei />
-      <Call/>
+      <Call />
       <Footer/>
       
     </div>

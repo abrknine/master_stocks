@@ -1,56 +1,63 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Hero.css'
 import Heroimg0 from '../assets/Heroimg0.jpg'
 import { FaPhone } from 'react-icons/fa'
-import {db} from '../firebase.js'
-import { addDoc, collection } from 'firebase/firestore'
-import { useNavigate } from 'react-router-dom'
-import { Alert } from 'react-bootstrap'
+// import {db} from '../firebase.js'
+// import { addDoc, collection } from 'firebase/firestore'
+// import { useNavigate } from 'react-router-dom'
+// import { Alert } from 'react-bootstrap'
 const Hero = () => 
 {
-  const setPrompt=async()=>{
+//   const setPrompt=async()=>{
 
-  const input=prompt('Enter your number','')
-  setNumber(input)
-  try {
-    const docRef = await addDoc(collection(db, "userData"), {
-      number: number,
-    });
-    setNumber('')
-   alert('Number uploaded successfully!')
-  } catch (e) {
-    alert('Try again!')
-}
-  }
+//   const input=prompt('Enter your number','')
+//   setNumber(input)
+//   try {
+//     const docRef = await addDoc(collection(db, "userData"), {
+//       number: number,
+//     });
+//     setNumber('')
+//    alert('Number uploaded successfully!')
+//   } catch (e) {
+//     alert('Try again!')
+// }
+//   }
 
-  const navigate=useNavigate()
+  // const navigate=useNavigate()
 
-       const [name,setName]=useState('')
-       const [number,setNumber]=useState('')
-       const [mobile,setMobile]=useState('')
-       const [email,setEmail]=useState('')
-       const [states,setStates]=useState('')
-       const [packages,setPackages]=useState('')
+      //   const [name,setName]=useState('')
+      //   const [number,setNumber]=useState('')
+      //  const [mobile,setMobile]=useState('')
+      //   const [email,setEmail]=useState('')
+      //   const [states,setStates]=useState('')
+      //   const [packages,setPackages]=useState('')
  
-  const setData=async(e)=>{
-  e.preventDefault()
-  try {
-    const docRef = await addDoc(collection(db, "userData"), {
-      name:name,
-      email:email,
-      mobile: mobile,
-      states:states,
-      packages:packages,
-    });
-    setName('')
-    setEmail('')
-    setMobile('')
+//   const setData=async(e)=>{
+//   e.preventDefault()
+//   try {
+//     const docRef = await addDoc(collection(db, "userData"), {
+//       name:name,
+//       email:email,
+//       mobile: mobile,
+//       states:states,
+//       packages:packages,
+//     });
+//     setName('')
+//     setEmail('')
+//     setMobile('')
     
-    navigate('/success')
-  } catch (e) {
-    alert('Try again!')
-}
-}
+//     navigate('/success')
+//   } catch (e) {
+//     alert('Try again!')
+// }
+// }
+const scrollToCallComponent = () => {
+  const element = document.getElementById('am');
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
   return (
     <div className='Hero-Section'>
       <div className='Hero-img'>
@@ -72,7 +79,7 @@ const Hero = () =>
         <div className='Call'>
           
 
-          <button value={number} onClick={setPrompt} >
+          <button value="number"  onClick={scrollToCallComponent}/* onClick={setPrompt}*/ >
   Request a call back
 </button>
         </div>
@@ -82,12 +89,12 @@ const Hero = () =>
       </div>
       <div className='Hero-Right'>
         <h3>Get Demo</h3>
-        <form action="" className='fourm' onSubmit={setData} >
-          <input type="text" placeholder='Full Name' required value={name} onChange={(e)=>{setName(e.target.value)}}/>
-          <input type="number" placeholder='Mobile' required value={mobile} onChange={(e)=>{setMobile(e.target.value)}}/>
-          <input type="mail" placeholder='Email' required value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
+        <form action="https://getform.io/f/09bcba9a-7c51-41fe-a70f-d0ec4ef4f011" method='POST' className='fourm' /*onSubmit={setData} */>
+          <input name="name" type="text" placeholder='Full Name' required /*/value={name}*//* onChange={(e)=>{setName(e.target.value)}}*//>
+          <input name="number" type="number" placeholder='Mobile' required /*value={mobile}*/ /*onChange={(e)=>{setMobile(e.target.value)}}*//>
+          <input name="email"  type="mail" placeholder='Email' required /*value={email} *//*onChange={(e)=>{setEmail(e.target.value)}}*//>
           {/* <label htmlFor="state">State:</label> */}
-  <select id="state" name="state" placeholder='state' required value={states} onChange={(e)=>{setStates(e.target.value)}} >
+  <select  type="text" id="state" name="state" placeholder='state' required /*value={states}*/ /*onChange={(e)=>{setStates(e.target.value)}} */>
     <option value="Andhra Pradesh">Andhra Pradesh</option>
     <option value="Arunachal Pradesh">Arunachal Pradesh</option>
     <option value="Assam">Assam</option>
@@ -117,7 +124,7 @@ const Hero = () =>
     <option value="Uttarakhand">Uttarakhand</option>
     <option value="West Bengal">West Bengal</option>
     </select>
-  <select name="income" id="income" required value={packages} onChange={(e)=>{setPackages(e.target.value)}}>
+  <select type="text"  name="income" id="income" required/* value={packages}*//* onChange={(e)=>{setPackages(e.target.value)}}*/>
     <option value="">Select income range</option>
     <option value="above-50000">Above 50,000</option>
     <option value="above-1-lakh">Above 1 Lakh</option>
@@ -125,8 +132,8 @@ const Hero = () =>
     <option value="above-3-lakh">Above 3 Lakh</option>
     
   </select>
-  <div className="checkbox-container">
-    <input type="checkbox" id="subscribe" name="subscribe" />
+  <div className="checkbox-container" >
+    <input type="checkbox" value="yes" id="subscribe" name="subscribe" />
     <label htmlFor="subscribe">I accept terms and condition </label>
   </div>
   <button type="submit" className="submit-button">Submit</button>

@@ -40,28 +40,28 @@ const Navbar = () => {
       </Dropdown.Toggle>
         <Dropdown.Menu className='Dropmenu bg-blue-500'>
           <Dropdown.Item >
-            <Link className='bg-blue-500 ' to="/page1">Equity Cash</Link>
+            <Link className=' text-black ' to="/page1">Index Option(Basic)</Link>
           </Dropdown.Item>
           <Dropdown.Item>
-            <Link className='bg-blue-500'  to="/page2">Equity Cash Premium</Link>
+            <Link className='text-black'   to="/page2">Index Option (Silver Package) </Link>
           </Dropdown.Item>
           <Dropdown.Item>
-            <Link className='bg-blue-500'   to="/page3">Index Option (Silver Package) </Link>
+            <Link className='text-black '   to="/page3">Index Option (Gold Package)</Link>
           </Dropdown.Item>
           <Dropdown.Item>
-            <Link className='bg-blue-500 px-20'   to="/page4">Index Option (Gold Package)</Link>
+            <Link className='text-black'  to="/page4">Index Option (Platinum Package)</Link>
           </Dropdown.Item>
           <Dropdown.Item>
-            <Link className='bg-blue-500'   to="/page5">Index Option (Combo Package)</Link>
+            <Link className='text-black'   to="/page5">Index Option (Combo Package)</Link>
           </Dropdown.Item>
+          
         </Dropdown.Menu>
 
         </Dropdown>
-
         </li>
               
         <li>
-           <Link to="/bankdetails">Bankdetails</Link>
+           <Link to="/bankdetails">Payment-details</Link>
         </li>
         <li>
            <Link to="/contactus">Contact-us</Link>

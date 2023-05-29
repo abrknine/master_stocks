@@ -2,9 +2,14 @@ import React from 'react'
 import './Footer.css'
 import { FaAddressBook, FaMailBulk, FaPhone } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+// import countapi from 'countapi-js';
+
+
 
 
 const Footer = () => {
+
+  
   return (
     <div className='Footer-class'>
         <div  className='Policies'>
@@ -89,10 +94,16 @@ const Footer = () => {
         <li className='flex gap-2'>  <FaAddressBook color='yellow'/>
         Master stocks advisor ,MBP,Ghansoli, <br />
         Mahape,Navi Mumbai ,Maharastra-400710</li>
+        <li>
+      <h1>This site has been visited <span id="visits"></span> times.</h1>
+
+        </li>
        
       </ul>
 
       </div>
+
+
       
     </div>
   )

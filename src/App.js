@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react';
+import React from 'react';
 import './index.css';
 import Home from "./routes/Home";
 import Aboutus from './routes/Aboutus';
@@ -27,31 +27,32 @@ import Grievance from './routes/Grievance';
 
 function App() {
 
-  const [showMobileMessage, setShowMobileMessage] = useState(false);
+  // const [showMobileMessage, setShowMobileMessage] = useState(false);
 
-  const handleResize = () => {
-    const isMobile = window.innerWidth <= 920;
-    setShowMobileMessage(isMobile);
-  };
+  // const handleResize = () => {
+  //   const isMobile = window.innerWidth <= 920;
+  //   setShowMobileMessage(isMobile);
+  // };
 
   // Add an event listener to handle window resize
   // and update the mobile message state accordingly
-  useEffect(() => {
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener('resize', handleResize);
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // }, []);
 
      return (
-    <> {showMobileMessage ? (
+    <> 
+    {/* {showMobileMessage ? (
       <div className="mobile-message flex justify-center items-center h-screen">
         <p  className='text-center'>
         Only available for web version now <br />
          ( other screens design coming soon...)
         </p>
         </div>
-    ) : (
+    ) : ( */}
     
      <Routes>
        <Route path="/" element={<Home/>}/>
@@ -77,7 +78,7 @@ function App() {
       <Route path='/investor' element={<Investor/>}/>
       <Route path='/grievance' element={<Grievance/>}/>
 
-     </Routes> )}
+     </Routes> 
      </>
    );
 

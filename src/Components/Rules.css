@@ -1,4 +1,4 @@
-
+/*
 .Rules {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -42,3 +42,59 @@
     border-radius: 50px / 5px;
     background-color: #000;
   }
+
+  @media (max-width: 768px) {
+    .Rules {
+      display: block;
+    }
+    .Rules div {
+      margin: 0px 0px;
+    }
+    .Rules div p{
+      margin: 0px 0px;
+    }
+  }
+*/
+.Rule-container {
+  text-align: center;
+}
+
+.Rules {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 30px;
+}
+
+.rule-item {
+  padding: 23px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 22px;
+}
+
+
+.curvy-title {
+  text-align: center;
+  position: relative;
+}
+
+.curvy-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 10px;
+  border-radius: 50px / 5px;
+  background-color: #000;
+}
+
+@media (max-width: 768px) {
+  .Rules {
+    grid-template-columns: 1fr;
+  }
+}

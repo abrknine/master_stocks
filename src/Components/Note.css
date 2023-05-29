@@ -18,4 +18,24 @@
       transform: translateX(-100%);
     }
   }
+  @media (max-width: 768px) {
+      
+  }
   
+  /*
+  .move-left-to-right {
+    margin: 0 20px;
+    color: red;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .move-left-to-right {
+      position: relative;
+      top: 0;
+      animation: none;
+    }
+  }
+  */

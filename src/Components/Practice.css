@@ -1,7 +1,7 @@
-.Practice{
+/*.Practice{
     margin: 23px auto;
 }
-
+*/
 /*.Cards{
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@
   text-align:center;
   margin:  100px 200px;
 } */
-
+/*
 .Card-1 h3{
     align-items: center;
   text-align: center;
@@ -121,5 +121,89 @@
     height: 10px;
     border-radius: 50px / 5px;
     background-color: #000;
+  }
+  */
+  .Practice-Heading {
+    text-align: center;
+    position: relative;
+  }
+  
+  .Practice-Heading::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 10px;
+    border-radius: 50px / 5px;
+    background-color: #000;
+  }
+  
+  .Card-1,
+  .Card-2,
+  .Card-3 {
+    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 12px;
+    padding: 30px 30px;
+    margin: 50px 500px;
+    max-width: 100%;
+    height: 200px;
+    position: relative;
+  }
+  
+  .Card-1 h3,
+  .Card-2 h3,
+  .Card-3 h3 {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 23px;
+  }
+  
+  .Card-1 p,
+  .Card-2 p,
+  .Card-3 p {
+    color: black;
+    font-size: 17px;
+    line-height: 20px;
+  }
+  
+  .card-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fcbf1b;
+    border: 2px solid black;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .Card-1,
+    .Card-2,
+    .Card-3 {
+      margin: 50px 20px;
+      max-width: calc(100% - 40px);
+    }
+  
+    .Card-1 h3,
+    .Card-2 h3,
+    .Card-3 h3 {
+      font-size: 20px;
+    }
+  
+    .Card-1 p,
+    .Card-2 p,
+    .Card-3 p {
+      font-size: 16px;
+    }
   }
   

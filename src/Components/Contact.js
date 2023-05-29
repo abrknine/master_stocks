@@ -53,7 +53,7 @@ const Contact = () => {
       <h2 className=" curvy-title text-4xl pt-40  font-bold text-center ">Contact us</h2>
 
         <div className='contact-us relative right-36 pt-10  '>
-    <ul className='flex gap-60 relative right-60 '>
+    <ul className='flex gap-60 relative right-60 contact'>
         <li className='flex gap-2'>  <FaPhone size={40} color='#0D6EFD'/>
         +912226099700</li>
         <li className='flex gap-2'>  <FaMailBulk  size={40} color='#0D6EFD'/>

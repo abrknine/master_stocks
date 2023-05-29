@@ -1,25 +1,30 @@
-.Footer-class{
-    
+
+  .Footer-class {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 32px;
     background-color: black;
     color: whitesmoke;
-}
-.Packages-clone ul{
+  }
+  
+  .Packages-clone ul,
+  .Policies ul,
+  .Contact-info ul {
     display: flex;
     flex-direction: column;
     gap: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .Footer-class {
+      flex-direction: column;
+      align-items: left;
+    }
+    /* .Contact-info{
+        margin-top: 43px;
+        margin-left: 12px;
+    } */
 
-}
-.Policies ul{
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-
-}
-.Contact-info ul{
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
+  }
+  

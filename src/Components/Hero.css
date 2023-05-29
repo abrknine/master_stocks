@@ -108,12 +108,34 @@ body {
   
   @media (max-width: 768px) {
     .Hero-content {
+      display: block;
+
       flex-direction: column;
       bottom: 200px;
     }
+    .Hero-Section{
+    height: 70vh;
+
+    }
     .Hero-Left {
+      display: none;
       text-align: center;
     }
+    .Call-Back{
+      display: none;
+    }
+    .Hero-content{
+      position: relative;
+      /* top: 12px; */
+
+    }
+    .Hero-Right{
+      position: absolute;
+       /* top: 10px; */
+      bottom: -400px; 
+
+    }
+    
     
   }
   

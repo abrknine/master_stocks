@@ -62,7 +62,7 @@ const UserAgreement = () => {
 export default UserAgreement;*/
 
 import React from "react"
-import { FaGithub , FaLinkedin,FaUser,FaExclamationCircle} from "react-icons/fa"
+import { FaUser,FaExclamationCircle} from "react-icons/fa"
 // import {HiOutlineMail} from "react-icons/hi";
 // import {BsFillPersonLinesFill} from "react-icons/bs"
 import { Link } from "react-router-dom";
